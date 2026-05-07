@@ -1,0 +1,137 @@
+:root {
+    --navy: #0a192f;
+    --white: #ffffff;
+    --muted: #b8c5d6;
+    --accent: #64ffda;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--navy);
+    color: var(--white);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    padding: 1.75rem 3rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 3rem;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.photo {
+    flex-shrink: 0;
+}
+
+.photo img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: #1a2c4e;
+}
+
+.intro {
+    flex: 1;
+}
+
+.intro h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 0.75rem;
+}
+
+.tagline {
+    color: var(--muted);
+    font-size: 1.15rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.3px;
+}
+
+.bio {
+    color: var(--muted);
+    font-size: 1.05rem;
+    max-width: 600px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 1.25rem 1.5rem;
+        justify-content: center;
+    }
+
+    nav ul {
+        gap: 1.5rem;
+    }
+
+    main {
+        padding: 1.5rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .photo img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .intro h1 {
+        font-size: 2.5rem;
+    }
+
+    .bio {
+        margin: 0 auto;
+    }
+}

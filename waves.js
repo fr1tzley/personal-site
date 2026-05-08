@@ -29,7 +29,7 @@ const CONFIG = {
     // Influence is a smooth bump that parts the waves around the cursor:
     // lines above are pulled up, lines below pushed down, with no discontinuity
     // as the cursor crosses a line.
-    mouseStrength:    20,    // peak displacement (px). Positive = part away, negative = pull toward
+    mouseStrength:    40,    // peak displacement (px). Positive = part away, negative = pull toward
     mouseFalloffX:    320,   // horizontal Gaussian width (px) — how far along the wave the bump reaches
     mouseFalloffY:    180,   // vertical width (px) — peak displacement occurs at this distance / √2 above and below
     mouseEase:        0.12,  // 0..1 — smoothing on cursor (lower = more lag, smoother flow)

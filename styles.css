@@ -15,6 +15,10 @@ html, body {
     height: 100%;
 }
 
+a {
+    color: white;
+}
+
 body {
     background-color: var(--navy);
     color: var(--white);
